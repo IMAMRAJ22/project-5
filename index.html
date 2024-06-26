@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background-color: #7dc61e;
+            background-image:
+            repeating-linear-gradient(
+                to right, transparent 0 100px,
+                #25283b22 100px 101px
+            ),
+            repeating-linear-gradient(
+                to bottom, transparent 0 100px,
+                #25283b22 100px 101px
+            );
+        }
+        
+        body::before{
+            position: absolute;
+            width: min(1400px, 90vw);
+            top: 10%;
+            left: 50%;
+            height: 90%;
+            transform: translateX(-50%);
+            content: '';
+            background-image: url(images/bg.png);
+            background-size: 100%;
+            background-repeat: no-repeat;
+            background-position: top center;
+            pointer-events: none;
+        }
+    </style>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="banner">
+        <div class="slider" style="--quantity: 8">
+            <div class="item" style="--position: 1"><img src="photo-1526034332220-067b0f400e06.jpeg" alt=""></div>
+            <div class="item" style="--position: 2"><img src="photo-1557008075-7f2c5efa4cfd.jpeg" alt=""></div>
+            <div class="item" style="--position: 3"><img src="photo-1562569633-622303bafef5.jpeg" alt=""></div>
+            <div class="item" style="--position: 4"><img src="photo-1600409396055-e2f42d491271.jpeg" alt=""></div>
+            <div class="item" style="--position: 5"><img src="photo-1614640514617-684c8b4c3403.jpeg" alt=""></div>
+            <div class="item" style="--position: 6"><img src="photo-1623645481161-0d8160281cbf.jpeg" alt=""></div>
+            <div class="item" style="--position: 7"><img src="photo-1626354132377-fa994612a006.jpeg" alt=""></div>
+            <div class="item" style="--position: 8"><img src="premium_photo-1669740462316-60cf425ba319.jpeg" alt=""></div>
+        </div>
+        <div class="content">
+            <h1 data-content="CSS ONLY">
+                CSS ONLY
+            </h1>
+            <div class="author">
+                <h2>ANIMAL KINGDOM</h2>
+                <p><b>Web Design</b></p>
+                <p>
+                    Subscribe to the channel to watch many interesting videos
+                </p>
+            </div>
+            <div class="model"></div>
+        </div>
+    </div>
+    
+</body>
+</html>
